@@ -1,25 +1,48 @@
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Chunky scrollbar styles */
+/**.simplebar-scrollbar::before {
+  background: linear-gradient(45deg, #4c82a7, #6ba8d1) !important;
+  width: 30px !important;
+  border-radius: 25px !important;
+  left: 0px !important;
+  opacity: 1 !important;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.preact:hover {
-  filter: drop-shadow(0 0 2em #673ab8aa);
+.simplebar-track.simplebar-vertical {
+  width: 40px !important;
+  background: #f8fafc !important;
+  border-radius: 25px !important;
+}*/
+
+/* Track */
+/* Track */
+.simplebar-track.simplebar-vertical {
+  width: 25px !important;
+  right: -10px !important; /* Move track to the right */
+  background: #f8fafc !important;
+  border-radius: 25px !important;
+  z-index: 9999 !important; /* Bring it forward */
 }
 
-.card {
-  padding: 2em;
+/* Thumb */
+.simplebar-scrollbar::before {
+  background: linear-gradient(45deg, #00b4d8, #0077b6);
+  width: 25px !important;
+  border-radius: 25px !important;
+  left: 5px !important;
+  opacity: 1 !important;
+  transition: background 1s ease !important;
+  z-index: 9999 !important; /* Ensure thumb is on top */
+}
+@keyframes gradient-cycle {
+  0% { background: linear-gradient(45deg, #00b4d8, #0077b6); }
+  25% { background: linear-gradient(45deg, #ff6b6b, #ff8e53); }
+  50% { background: linear-gradient(45deg, #6a11cb, #2575fc); }
+  75% { background: linear-gradient(45deg, #2ecc71, #27ae60); }
+  100% { background: linear-gradient(45deg, #00b4d8, #0077b6); }
 }
 
-.read-the-docs {
-  color: #888;
+.simplebar-scrollbar::before {
+  animation: 
+    gradient-cycle 35 infinite, 
+    pulse 2s infinite;
 }

@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-fastlearn-dev-d7488-authRole",
+      "UnauthRoleArn": "arn:aws:iam::654654352890:role/amplify-fastlearn-dev-d7488-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::654654352890:role/amplify-fastlearn-dev-d7488-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-fastlearn-dev-d7488-deployment",
+      "UnauthRoleName": "amplify-fastlearn-dev-d7488-unauthRole",
+      "StackName": "amplify-fastlearn-dev-d7488",
+      "StackId": "arn:aws:cloudformation:us-east-2:654654352890:stack/amplify-fastlearn-dev-d7488/9d303f60-efa2-11ef-9b3e-06ea0222b893",
+      "AmplifyAppId": "d1urfv71tgsapw"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d1urfv71tgsapw",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}
